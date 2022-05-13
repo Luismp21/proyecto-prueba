@@ -12,6 +12,7 @@ class CreateEmpleadosTable extends Migration
      * @return void
      */
     public function up()
+    //Para crear la tabla
     {
         Schema::create('empleados', function (Blueprint $table) {
             $table->id();
@@ -29,6 +30,7 @@ class CreateEmpleadosTable extends Migration
      * @return void
      */
     public function down()
+    //Para elminar la tabla
     {
         Schema::dropIfExists('empleados');
     }
